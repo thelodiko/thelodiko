@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Source+Sans+3:wght@400;500&display=swap');
+
+:root{
+  --carta: #F2EDE2;
+  --carta-bordo: #D9CFB8;
+  --inchiostro: #3A3326;
+  --inchiostro-tenue: #4A4332;
+  --terracotta: #8B4A2B;
+  --c-arte: #6B7355;
+  --c-territorio: #8B4A2B;
+  --c-fumetti: #C2542C;
+  --c-libri: #2F4A3A;
+  --c-archeologia: #B8862E;
+  --c-storia: #5A4634;
+  --c-cinema: #4A6377;
+  --c-attualita: #6B6760;
+  --font-titoli: 'Source Serif 4', Georgia, serif;
+  --font-testo: 'Source Sans 3', -apple-system, sans-serif;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ background:var(--carta); color:var(--inchiostro); font-family:var(--font-testo); line-height:1.7; -webkit-font-smoothing:antialiased; }
+.contenitore{ max-width:720px; margin:0 auto; padding:0 1.5rem; }
+header.testata{ text-align:center; border-bottom:1px solid var(--terracotta); padding:3rem 1.5rem 1.6rem; margin-bottom:2.5rem; }
+header.testata .monogramma{
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px;
+  display: block;
+}
+ font-family:var(--font-titoli); font-size:12px; letter-spacing:3px; color:var(--terracotta); margin-bottom:8px; }
+header.testata h1{ font-family:var(--font-titoli); font-size:44px; font-weight:500; letter-spacing:0.5px; }
+header.testata h1 a{ color:var(--inchiostro); text-decoration:none; }
+header.testata .sottotitolo{ font-style:italic; color:#6B7355; font-size:14px; margin-top:10px; }
+nav.sezioni{ display:flex; flex-wrap:wrap; justify-content:center; gap:6px 14px; margin-top:1.4rem; }
+nav.sezioni a{ font-family:var(--font-titoli); font-size:13px; color:var(--inchiostro-tenue); text-decoration:none; padding-bottom:2px; border-bottom:2px solid transparent; cursor:pointer; }
+nav.sezioni a:hover, nav.sezioni a.attivo{ border-bottom-color:var(--terracotta); color:var(--terracotta); }
+article.scheda{ margin-bottom:2.4rem; }
+article.scheda .immagine{ border-radius:6px; height:220px; margin-bottom:16px; display:flex; align-items:center; justify-content:center; color:var(--carta); font-size:44px; }
+article.scheda .etichetta{ font-family:var(--font-titoli); font-size:11.5px; letter-spacing:1.5px; margin-bottom:7px; font-weight:600; }
+article.scheda h2{ font-family:var(--font-titoli); font-size:25px; font-weight:500; line-height:1.3; margin-bottom:10px; }
+article.scheda h2 a{ color:var(--inchiostro); text-decoration:none; }
+article.scheda h2 a:hover{ text-decoration:underline; }
+article.scheda p.estratto{ color:var(--inchiostro-tenue); font-size:15.5px; margin-bottom:14px; }
+article.scheda .meta{ display:flex; justify-content:space-between; font-size:12.5px; color:#6B7355; }
+article.scheda .leggi{ font-family:var(--font-titoli); }
+hr.separatore{ border:none; border-top:0.5px solid var(--carta-bordo); margin:0 0 2.4rem; }
+.articolo-pagina .etichetta{ font-family:var(--font-titoli); font-size:12px; letter-spacing:1.5px; font-weight:600; margin-bottom:10px; }
+.articolo-pagina h1{ font-family:var(--font-titoli); font-size:36px; font-weight:500; line-height:1.25; margin-bottom:14px; }
+.articolo-pagina .meta-articolo{ font-size:13px; color:#6B7355; margin-bottom:1.8rem; }
+.articolo-pagina .immagine-hero{ border-radius:6px; height:320px; margin-bottom:2rem; display:flex; align-items:center; justify-content:center; color:var(--carta); font-size:60px; }
+.articolo-pagina .corpo-testo p{ font-size:17px; color:var(--inchiostro-tenue); margin-bottom:1.3rem; }
+.articolo-pagina .corpo-testo p:first-of-type::first-letter{ font-family:var(--font-titoli); font-size:56px; float:left; line-height:0.85; padding:6px 8px 0 0; color:var(--terracotta); }
+a.indietro{ display:inline-block; margin-top:1rem; margin-bottom:2rem; font-family:var(--font-titoli); font-size:13px; color:var(--terracotta); text-decoration:none; }
+footer.piede{ text-align:center; border-top:1px solid var(--carta-bordo); padding:2rem 1.5rem 3rem; margin-top:3rem; font-size:12.5px; color:#6B7355; }
+.sezione-arte .immagine,.sezione-arte .immagine-hero{ background:var(--c-arte); }
+.sezione-arte .etichetta{ color:var(--c-arte); }
+.sezione-territorio .immagine,.sezione-territorio .immagine-hero{ background:var(--c-territorio); }
+.sezione-territorio .etichetta{ color:var(--c-territorio); }
+.sezione-fumetti .immagine,.sezione-fumetti .immagine-hero{ background:var(--c-fumetti); }
+.sezione-fumetti .etichetta{ color:var(--c-fumetti); }
+.sezione-libri .immagine,.sezione-libri .immagine-hero{ background:var(--c-libri); }
+.sezione-libri .etichetta{ color:var(--c-libri); }
+.sezione-archeologia .immagine,.sezione-archeologia .immagine-hero{ background:var(--c-archeologia); }
+.sezione-archeologia .etichetta{ color:var(--c-archeologia); }
+.sezione-storia .immagine,.sezione-storia .immagine-hero{ background:var(--c-storia); }
+.sezione-storia .etichetta{ color:var(--c-storia); }
+.sezione-cinema .immagine,.sezione-cinema .immagine-hero{ background:var(--c-cinema); }
+.sezione-cinema .etichetta{ color:var(--c-cinema); }
+.sezione-attualita .immagine,.sezione-attualita .immagine-hero{ background:var(--c-attualita); }
+.sezione-attualita .etichetta{ color:var(--c-attualita); }
+@media(max-width:480px){ header.testata h1{ font-size:34px; } article.scheda h2{ font-size:21px; } .articolo-pagina h1{ font-size:28px; } .articolo-pagina .immagine-hero{ height:220px; font-size:44px; } }
